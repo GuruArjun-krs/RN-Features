@@ -5,7 +5,7 @@ import RNGoogleMap from '../Screens/RNGoogleMaps'
 import { NavigationContainer } from '@react-navigation/native'
 import ModuleSelect from '../Screens/ModuleSelect'
 import RNGoogleLogin from '../Screens/RNGoogleLogin'
-import RNArVr from '../Screens/RNArgumentReality'
+import RNArVr from '../Screens/RNAugmentedReality'
 
 const Stack = createStackNavigator()
 
