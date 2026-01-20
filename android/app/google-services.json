@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "174568161980",
+    "project_id": "testlogin-8d078",
+    "storage_bucket": "testlogin-8d078.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:174568161980:android:9cc2710e1f17fec53686b9",
+        "android_client_info": {
+          "package_name": "com.rnmap"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "174568161980-130h0epr8m12jrss295tv4t38a0mr21k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDL0mTdB98Hkb9ygHm_vTW1L07yiJ7F0o0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "174568161980-130h0epr8m12jrss295tv4t38a0mr21k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
