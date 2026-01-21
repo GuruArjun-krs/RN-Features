@@ -9,8 +9,8 @@ const ModuleSelect = () => {
 
     const routesName = [
         { name: 'RN Map', routeName: 'rnmap', bgColor: '#000000', textClr: '#FFFFFF' },
-        { name: 'Google Login', routeName: 'RNGoogleLogin', bgColor: '#000000', textClr: '#FFFFFF' },
-        { name: 'Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' }
+        { name: 'RN Google Login', routeName: 'RNGoogleLogin', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' }
     ];
 
     const renderRoutes = ({ item }: any) => {

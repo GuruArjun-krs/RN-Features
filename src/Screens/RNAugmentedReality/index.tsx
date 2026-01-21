@@ -1,14 +1,14 @@
-import React from 'react'
-import { Text } from 'react-native'
-import { SafeAreaView } from 'react-native-safe-area-context'
+import React from 'react';
+import { PermissionsAndroid, Button, View } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const RNArVr = () => {
+
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
-            <Text style={{ color: 'red' }}>RNArVr</Text>
-        </SafeAreaView>
 
-    )
+        </SafeAreaView>
+    );
 }
 
 export default RNArVr
