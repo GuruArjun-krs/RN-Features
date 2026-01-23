@@ -7,6 +7,7 @@ import ModuleSelect from '../Screens/ModuleSelect'
 import RNGoogleLogin from '../Screens/RNGoogleLogin'
 import RNArVr from '../Screens/RNAugmentedReality'
 import IntroScreen from '../Screens/IntroScreen'
+import RNBarCodeScanner from '../Screens/RNBarCodeScanner'
 
 const Stack = createStackNavigator()
 
@@ -25,6 +26,7 @@ const MainRoute = () => {
                 <Stack.Screen name='RNGoogleLogin' component={RNGoogleLogin} />
                 <Stack.Screen name='RNArVr' component={RNArVr} />
                 <Stack.Screen name='IntroScreen' component={IntroScreen} />
+                <Stack.Screen name='RNBarCodeScanner' component={RNBarCodeScanner} />
             </Stack.Navigator>
         </NavigationContainer>
     )
