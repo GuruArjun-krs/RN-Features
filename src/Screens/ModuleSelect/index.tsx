@@ -10,7 +10,9 @@ const ModuleSelect = () => {
     const routesName = [
         { name: 'RN Map', routeName: 'rnmap', bgColor: '#000000', textClr: '#FFFFFF' },
         { name: 'RN Google Login', routeName: 'RNGoogleLogin', bgColor: '#000000', textClr: '#FFFFFF' },
-        { name: 'RN Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' }
+        { name: 'RN Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN BarCode Scanner', routeName: 'RNBarCodeScanner', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RNFirebaseNotification', routeName: 'RNFirebaseNotification', bgColor: '#000000', textClr: '#FFFFFF' }
     ];
 
     const renderRoutes = ({ item }: any) => {
