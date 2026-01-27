@@ -1,5 +1,5 @@
 import React, { JSX } from 'react';
-import { View, StyleSheet, Text, Image, TouchableOpacity } from 'react-native';
+import { Text, TouchableOpacity } from 'react-native';
 import { ItemType } from '../../Utils/types';
 
 type ARItemProps = {
@@ -16,8 +16,5 @@ function ARItem(props: ARItemProps): JSX.Element {
         </TouchableOpacity>
     );
 }
-
-const styles = StyleSheet.create({
-});
 
 export default ARItem;

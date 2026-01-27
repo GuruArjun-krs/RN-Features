@@ -1,14 +1,13 @@
 import { Linking } from "react-native";
 
-
-export const openExternalLink = (url: string) => {
+export const openExternalLink = async (url: string) => {
     return Linking.openURL(url)
         .then(() => {
             console.log('Link opened successfully');
         })
         .catch(err => {
             console.error('Error opening external link:', err);
-            throw err; // Rethrow the error for the calling code to handle
+            throw err;
         });
 };
 

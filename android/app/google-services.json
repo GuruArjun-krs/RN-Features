@@ -1,18 +1,35 @@
 {
   "project_info": {
     "project_number": "174568161980",
+    "firebase_url": "https://testlogin-8d078-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "testlogin-8d078",
     "storage_bucket": "testlogin-8d078.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:174568161980:android:9cc2710e1f17fec53686b9",
+        "mobilesdk_app_id": "1:174568161980:android:44ca82541b99f9e93686b9",
         "android_client_info": {
           "package_name": "com.rnmap"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "174568161980-h4gm3rjn2pgqda3k1v3vmle2an0e6kvn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rnmap",
+            "certificate_hash": "a8ab7cf1d3d581b97d36aaf5b42b5fe2459bba0d"
+          }
+        },
+        {
+          "client_id": "174568161980-ig81147qsp9qnqg800h21g0ao1s67bs9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rnmap",
+            "certificate_hash": "01ea38fecefe3a0bebbad79d11d42705488acd1c"
+          }
+        },
         {
           "client_id": "174568161980-130h0epr8m12jrss295tv4t38a0mr21k.apps.googleusercontent.com",
           "client_type": 3
