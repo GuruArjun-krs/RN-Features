@@ -45,3 +45,13 @@ export const checkARSupport = async (): Promise<{ supported: boolean, reason?: a
         }
     });
 };
+
+export const requestNotificationPermission = async () => {
+    if (Platform.OS === 'android') {
+        const granted = await PermissionsAndroid.request(
+            PermissionsAndroid.PERMISSIONS.POST_NOTIFICATIONS
+        );
+        return granted === PermissionsAndroid.RESULTS.GRANTED;
+    }
+    return true;
+};

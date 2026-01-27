@@ -1,16 +1,26 @@
 import React, { useEffect } from 'react'
 import { Button, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
-import notifee, { AndroidImportance } from '@notifee/react-native';
+import notifee from '@notifee/react-native';
 import messaging from '@react-native-firebase/messaging';
+import { requestNotificationPermission } from '../../Utils/permission';
 
 const RNFirebaseNotification = () => {
+    useEffect(() => {
+        requestNotificationPermission()
+        const getFcm = async () => {
+            const fcmToken = await messaging().getToken();
+            console.log('FCM Token:', fcmToken);
+        };
+        getFcm();
+    }, [])
 
     async function triggerLocalNotification() {
         await notifee.createChannel({
             id: 'default',
             name: 'Test Channel',
-            importance: AndroidImportance.HIGH,
+            sound: 'default',
+            vibration: true,
         });
 
         await notifee.displayNotification({
@@ -18,19 +28,12 @@ const RNFirebaseNotification = () => {
             body: 'Vanakkam maamae from local uh',
             android: {
                 channelId: 'default',
-                importance: AndroidImportance.HIGH,
                 pressAction: { id: 'default' },
+                sound: 'default',
             },
         });
     }
 
-    useEffect(() => {
-        const getFcm = async () => {
-            const fcmToken = await messaging().getToken();
-            console.log('FCM Token:', fcmToken);
-        };
-        getFcm();
-    }, [])
 
     return (
         <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
