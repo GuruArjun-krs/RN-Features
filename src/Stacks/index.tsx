@@ -9,8 +9,11 @@ import RNArVr from '../Screens/RNAugmentedReality'
 import IntroScreen from '../Screens/IntroScreen'
 import RNBarCodeScanner from '../Screens/RNBarCodeScanner'
 import RNFirebaseNotification from '../Screens/RNFirebaseNotification'
+import RNFirebaseChat from '../Screens/RNFirebaseChat/chatScreen'
+import UserListScreen from '../Screens/RNFirebaseChat/userListScreen'
+import { RootStackParamList } from '../Utils/types'
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator<RootStackParamList>()
 
 const MainRoute = () => {
     return (
@@ -22,13 +25,15 @@ const MainRoute = () => {
                     gestureEnabled: true,
                 }}
             >
+                <Stack.Screen name='IntroScreen' component={IntroScreen} />
                 <Stack.Screen name='moduleSelect' component={ModuleSelect} />
-                <Stack.Screen name='rnmap' component={RNGoogleMap} />
+                <Stack.Screen name='RNMap' component={RNGoogleMap} />
                 <Stack.Screen name='RNGoogleLogin' component={RNGoogleLogin} />
                 <Stack.Screen name='RNArVr' component={RNArVr} />
-                <Stack.Screen name='IntroScreen' component={IntroScreen} />
                 <Stack.Screen name='RNBarCodeScanner' component={RNBarCodeScanner} />
                 <Stack.Screen name='RNFirebaseNotification' component={RNFirebaseNotification} />
+                <Stack.Screen name='UserListScreen' component={UserListScreen} />
+                <Stack.Screen name='RNFirebaseChat' component={RNFirebaseChat} />
             </Stack.Navigator>
         </NavigationContainer>
     )
