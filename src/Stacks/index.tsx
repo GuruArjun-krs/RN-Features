@@ -13,6 +13,8 @@ import RNFirebaseChat from '../Screens/RNFirebaseChat/chatScreen'
 import UserListScreen from '../Screens/RNFirebaseChat/userListScreen'
 import { RootStackParamList } from '../Utils/types'
 import RNMapboxScreen from '../Screens/RNMapbox'
+import SignUpFirebase from '../Screens/RNFirebaseChat/signUpFirebase'
+import LoginFirebase from '../Screens/RNFirebaseChat/signInFirebase'
 
 const Stack = createStackNavigator<RootStackParamList>()
 
@@ -26,6 +28,8 @@ const MainRoute = () => {
                     gestureEnabled: true,
                 }}
             >
+                <Stack.Screen name='SignUpFirebase' component={SignUpFirebase} />
+                <Stack.Screen name='LoginFirebase' component={LoginFirebase} />
                 <Stack.Screen name='IntroScreen' component={IntroScreen} />
                 <Stack.Screen name='moduleSelect' component={ModuleSelect} />
                 <Stack.Screen name='RNMap' component={RNGoogleMap} />
