@@ -8,6 +8,7 @@ export type RootStackParamList = {
     RNFirebaseNotification: undefined;
     UserListScreen: undefined;
     RNFirebaseChat: { roomId: string };
+    RNMapboxScreen: undefined
 };
 
 export type ItemType = {

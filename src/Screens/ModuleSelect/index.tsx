@@ -13,7 +13,9 @@ const ModuleSelect = () => {
         { name: 'RN Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' },
         { name: 'RN BarCode Scanner', routeName: 'RNBarCodeScanner', bgColor: '#000000', textClr: '#FFFFFF' },
         { name: 'RN FirebaseNotification', routeName: 'RNFirebaseNotification', bgColor: '#000000', textClr: '#FFFFFF' },
-        { name: 'RN FirebaseChat', routeName: 'UserListScreen', bgColor: '#000000', textClr: '#FFFFFF' }
+        { name: 'RN FirebaseChat', routeName: 'UserListScreen', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN MapBox', routeName: 'RNMapboxScreen', bgColor: '#000000', textClr: '#FFFFFF' },
+
     ];
 
     const renderRoutes = ({ item }: any) => {
