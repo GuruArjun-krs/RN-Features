@@ -12,6 +12,7 @@ import RNFirebaseNotification from '../Screens/RNFirebaseNotification'
 import RNFirebaseChat from '../Screens/RNFirebaseChat/chatScreen'
 import UserListScreen from '../Screens/RNFirebaseChat/userListScreen'
 import { RootStackParamList } from '../Utils/types'
+import RNMapboxScreen from '../Screens/RNMapbox'
 
 const Stack = createStackNavigator<RootStackParamList>()
 
@@ -34,6 +35,7 @@ const MainRoute = () => {
                 <Stack.Screen name='RNFirebaseNotification' component={RNFirebaseNotification} />
                 <Stack.Screen name='UserListScreen' component={UserListScreen} />
                 <Stack.Screen name='RNFirebaseChat' component={RNFirebaseChat} />
+                <Stack.Screen name='RNMapboxScreen' component={RNMapboxScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

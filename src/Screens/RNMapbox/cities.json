@@ -1,0 +1,37 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "Chennai" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [80.15, 12.95],
+            [80.35, 12.95],
+            [80.35, 13.15],
+            [80.15, 13.15],
+            [80.15, 12.95]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "New York" },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [-74.05, 40.65],
+            [-73.85, 40.65],
+            [-73.85, 40.85],
+            [-74.05, 40.85],
+            [-74.05, 40.65]
+          ]
+        ]
+      }
+    }
+  ]
+}
