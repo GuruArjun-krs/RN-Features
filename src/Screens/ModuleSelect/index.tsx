@@ -8,9 +8,14 @@ const ModuleSelect = () => {
     const { width } = Dimensions.get('window')
 
     const routesName = [
-        { name: 'RN Map', routeName: 'rnmap', bgColor: '#000000', textClr: '#FFFFFF' },
-        { name: 'Google Login', routeName: 'RNGoogleLogin', bgColor: '#000000', textClr: '#FFFFFF' },
-        { name: 'Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' }
+        { name: 'RN Map', routeName: 'RNMap', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN Google Login', routeName: 'RNGoogleLogin', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN Argument Reality', routeName: 'RNArVr', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN BarCode Scanner', routeName: 'RNBarCodeScanner', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN FirebaseNotification', routeName: 'RNFirebaseNotification', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN FirebaseChat', routeName: 'SignUpFirebase', bgColor: '#000000', textClr: '#FFFFFF' },
+        { name: 'RN MapBox', routeName: 'RNMapboxScreen', bgColor: '#000000', textClr: '#FFFFFF' },
+
     ];
 
     const renderRoutes = ({ item }: any) => {
