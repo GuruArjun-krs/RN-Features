@@ -21,7 +21,11 @@ const RNArVr = () => {
       <FlatList
         data={data}
         renderItem={renderItem}
-        contentContainerStyle={{ gap: 12 }}
+        contentContainerStyle={{
+          gap: 12,
+          justifyContent: 'center',
+          flex: 1,
+        }}
       />
     </SafeAreaView>
   );
