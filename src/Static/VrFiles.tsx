@@ -10,8 +10,13 @@ const dataAndroid: ItemType[] = [
 
 const dataIOS: ItemType[] = [
     {
-        name: 'IOS Url',
-        aRUrl: 'https://developer.apple.com/augmented-reality/quick-look/models/biplane/toy_biplane_idle.usdz',
+        name: '.Usdz',
+        aRUrl: 'https://rengyapi.coderz-demo.com/uploads/arvr-assets/toy_drummer.usdz',
+    },
+    {
+        name: '.Reality',
+        aRUrl: 'https://rengyapi.coderz-demo.com/uploads/arvr-assets/hab_en.reality',
     },
 ];
+
 export default Platform.OS === 'android' ? dataAndroid : dataIOS;
