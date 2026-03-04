@@ -5,7 +5,8 @@ import RNGoogleMap from '../Screens/RNGoogleMaps'
 import { NavigationContainer } from '@react-navigation/native'
 import ModuleSelect from '../Screens/ModuleSelect'
 import RNGoogleLogin from '../Screens/RNGoogleLogin'
-import RNArVr from '../Screens/RNArgumentReality'
+import RNArVr from '../Screens/RNAugmentedReality'
+import IntroScreen from '../Screens/IntroScreen'
 
 const Stack = createStackNavigator()
 
@@ -13,7 +14,7 @@ const MainRoute = () => {
     return (
         <NavigationContainer>
             <Stack.Navigator
-                initialRouteName='moduleSelect'
+                initialRouteName='IntroScreen'
                 screenOptions={{
                     headerShown: false,
                     gestureEnabled: true,
@@ -23,6 +24,7 @@ const MainRoute = () => {
                 <Stack.Screen name='rnmap' component={RNGoogleMap} />
                 <Stack.Screen name='RNGoogleLogin' component={RNGoogleLogin} />
                 <Stack.Screen name='RNArVr' component={RNArVr} />
+                <Stack.Screen name='IntroScreen' component={IntroScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )
